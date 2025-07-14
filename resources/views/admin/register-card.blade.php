@@ -33,7 +33,7 @@
                         <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control" required>
                     </div>
 
-                    <!-- Card ID dengan tombol Scan Card di sampingnya -->
+                    
                     <div class="container align-middle">
                         <div class="row align-items-end">
                             <div class="col-sm-8"> 
