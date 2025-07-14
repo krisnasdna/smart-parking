@@ -52,20 +52,20 @@
     </div>
 
     <script>
-        // Ketika tombol Scan Card diklik
+        
         $('#scanCardButton').on('click', function () {
-            // Tampilkan pesan loading
+            
             alert('Changing to registration mode...');
 
-            // Kirim permintaan untuk mengubah mode menjadi registrasi
+           
             $.post('http://192.168.0.106/set_mode', { mode: 'registration' }, function (response) {
                 if (response.status === 'success') {
                     alert('Registration mode activated. Scanning card...');
 
-                    // Setelah mode berhasil diubah, kirim permintaan untuk memindai kartu
-                    $.get('http://192.168.0.106/get_card_id', function (data) {  // Ganti dengan IP ESP32 kamu
+                    
+                    $.get('http://192.168.0.106/get_card_id', function (data) { 
                         if (data.card_id) {
-                            $('#card_id').val(data.card_id); // Isi form dengan ID kartu
+                            $('#card_id').val(data.card_id); 
                             alert('Card scanned successfully!');
                         } else {
                             alert('Failed to scan card.');
