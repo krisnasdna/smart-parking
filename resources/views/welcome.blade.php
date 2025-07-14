@@ -11,7 +11,7 @@
     <div class="container-xl mt-5 text-center">
         <h3>Informasi Slot Parkir</h3>
         <div class="row mt-5">
-            @foreach ($slots as $slot)  <!-- Looping untuk setiap slot parkir -->
+            @foreach ($slots as $slot)  
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <div class="card-header bg-primary text-white">
